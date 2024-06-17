@@ -29,7 +29,7 @@ twitter_username: plainprogrammer
 github_username: plainprogrammer
 
 # Build settings
-theme: minima
+theme: jekyll-theme-chirpy
 plugins:
   - jekyll-feed
 
@@ -52,3 +52,11 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+  app:
+    output: true
+    permalink: /:name

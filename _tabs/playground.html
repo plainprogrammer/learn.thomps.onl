@@ -1,0 +1,36 @@
+---
+layout: page
+title: Playground
+icon: fa fa-code
+description: Play around with Ruby in your browser.
+---
+
+<section>
+    <script src="https://cdn.jsdelivr.net/npm/@ruby/3.3-wasm-wasi@2.6.1/dist/browser.script.iife.js"></script>
+
+    <textarea id="input" rows="6" cols="80">
+        3.times do
+            puts ["Hello", "😀", "❤️"].sample
+        end
+    </textarea>
+
+    <button id="run" disabled>Run (Ctrl + Enter)</button>
+
+    <textarea id="output" rows="6" cols="80" readonly></textarea>
+</section>
+
+<style>
+    section {
+        text-align: center;
+    }
+
+    #run {
+        background-color: darkseagreen;
+        color: black;
+        border-radius: 0.5em;
+        border-color: black;
+        margin: 1em;
+    }
+</style>
+
+<script type="text/ruby" src="./playground.rb"></script>

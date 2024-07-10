@@ -1,0 +1,110 @@
+---
+title: Foundations
+description: Explore the basic ways of representing data in programming languages.
+
+layout: page
+order: 1
+icon: fa fa-trowel-bricks
+---
+<script src="https://cdn.jsdelivr.net/npm/@ruby/3.3-wasm-wasi@2.6.1/dist/browser.script.iife.js"></script>
+
+<p>Every program you write will use a variety of different types of data. Some of it will be numbers, text, lists, or
+more complex data.</p>
+
+<h2>Numbers</h2>
+<p>Numbers come in two basic types: integers and floats. Each has their respective uses and they can be mixed in various
+circumstances.</p>
+
+<h3>Integers</h3>
+
+<fieldset class="code example">
+    <input class="input" size="8" aria-label="Code Sample" value="3 + 5" readonly/>
+    <button class="run" disabled>Run</button>
+    <input class="output" size="8" aria-label="Code Output" readonly />
+</fieldset>
+<fieldset class="code example">
+    <input class="input" size="8" aria-label="Code Sample" value="2 * 8" readonly/>
+    <button class="run" disabled>Run</button>
+    <input class="output" size="8" aria-label="Code Output" readonly />
+</fieldset>
+<fieldset class="code example">
+    <input class="input" size="8" aria-label="Code Sample" value="14 / 7" readonly/>
+    <button class="run" disabled>Run</button>
+    <input class="output" size="8" aria-label="Code Output" readonly />
+</fieldset>
+
+<p>Integers, or whole numbers, are the most familiar numbers we interact with. We can use them in combination of math
+operators. Below are some examples of how you can use integers for basic math.</p>
+
+<hr />
+<h4>Explore</h4>
+<fieldset class="code try">
+    <input class="input" size="8" aria-label="Code Sample" placeholder="3 + 5" />
+    <button class="run" disabled>Run</button>
+    <input class="output" size="8" aria-label="Code Output" readonly />
+</fieldset>
+
+<h3>Floats</h3>
+
+<fieldset class="code example">
+    <input class="input" size="8" aria-label="Code Sample" value="1.0 + 0.5" readonly/>
+    <button class="run" disabled>Run</button>
+    <input class="output" size="8" aria-label="Code Output" readonly />
+</fieldset>
+<fieldset class="code example">
+    <input class="input" size="8" aria-label="Code Sample" value="2.0 * 1.3" readonly/>
+    <button class="run" disabled>Run</button>
+    <input class="output" size="8" aria-label="Code Output" readonly />
+</fieldset>
+<fieldset class="code example">
+    <input class="input" size="8" aria-label="Code Sample" value="14.2 / 2" readonly/>
+    <button class="run" disabled>Run</button>
+    <input class="output" size="8" aria-label="Code Output" readonly />
+</fieldset>
+
+<p></p>
+
+<hr />
+<h4>Explore</h4>
+<dl class="try-these">
+    <dt>Try These Out</dt>
+    <dd>
+        How many minutes in a day?<br/>
+        How many hours in a year?<br/>
+        How old are you in seconds?
+    </dd>
+</dl>
+<fieldset class="code try">
+    <input class="input" size="20" aria-label="Code Sample" placeholder="1.0 + 0.5" />
+    <button class="run" disabled>Run</button>
+    <input class="output" size="20" aria-label="Code Output" readonly />
+</fieldset>
+
+<style>
+    hr {
+        clear: both;
+    }
+
+    section {
+        text-align: center;
+    }
+
+    fieldset.code.example {
+        float: right;
+        clear: right;
+    }
+
+    button.run {
+        background-color: darkseagreen;
+        color: black;
+        border-radius: 0.5em;
+        border-color: black;
+        margin: 1em;
+    }
+
+    .try-these {
+        float: right;
+    }
+</style>
+
+<script type="text/ruby" src="./foundations.rb"></script>

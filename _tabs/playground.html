@@ -3,6 +3,7 @@ title: Playground
 description: Play around with Ruby in your browser.
 
 layout: page
+order: 2
 icon: fa fa-code
 ---
 
@@ -10,9 +11,7 @@ icon: fa fa-code
     <script src="https://cdn.jsdelivr.net/npm/@ruby/3.3-wasm-wasi@2.6.1/dist/browser.script.iife.js"></script>
 
     <textarea id="input" rows="6" cols="80">
-        3.times do
-            puts ["Hello", "😀", "❤️"].sample
-        end
+        3 + 5
     </textarea>
 
     <button id="run" disabled>Run (Ctrl + Enter)</button>
